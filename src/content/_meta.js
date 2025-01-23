@@ -5,4 +5,7 @@ export default {
     "build-it-yourself": "Build It Yourself",
     "steam-credentials": "Steam Credentials",
     "faq": "FAQ",
+    "features": "Features",
+    "settings": "Settings",
+    "gallery": "Gallery",
 }
