@@ -1,0 +1,28 @@
+import { Steps } from 'nextra/components'
+import Icon from '../../components/Icon'
+
+# Game Settings
+
+Game specific settings can be used to control how certain SGI features handle specific games.
+
+<Steps>
+{<h3>Step 1</h3>}
+Hover over a `game card` in the `games list`
+
+{<h3>Step 2</h3>}
+Click <Icon type='dots' /> to show the `game card menu`
+
+{<h3>Step 3</h3>}
+Click `game settings`
+</Steps>
+
+### Max idle time (minutes)
+* **Purpose:** Set the maximum amount of time (in minutes) this game should be idled for. SGI will stop idling this game when the time limit is reached
+* **Considerations:** This only affects games that are idled by `manual idle` or `auto idle`, and does not affect games idled by `card farming` or `achievement unlocker`
+
+### Max card drops
+* **Purpose:** Set the maximum amount of card drops you want `card farming` to farm for this game before it stops
+* **Considerations:** There are no set times or guarantees on card drop intervals, so even though SGI will try to stay within this limit as best as it can, it may not always be perfect
+
+### Max achievement unlocks
+* **Purpose:** Set the maximum amount of achievements you want `achievement unlocker` to unlock for you. SGI will stop unlocking achievements for this game and remove it from the `achievement unlocker` list when the limit is reached

@@ -1,0 +1,63 @@
+import { Steps } from 'nextra/components'
+import Callout from '../components/Callout'
+
+# Build It Yourself
+
+## Prerequisites
+- [Node.js](https://nodejs.org/en/download/prebuilt-installer) >= 18.0
+- [Rustup](https://www.rust-lang.org/tools/install)
+- [Visual Studio Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/) with .NET SDK and MSBuild >= 14.0
+- [Contact me](mailto:zevnda@gmail.com) for a private API key to access https://apibase.vercel.app/api/
+
+## Steps
+
+<Steps>
+### Clone Repo
+
+```shell copy
+git clone https://github.com/probablyraging/steam-game-idler.git
+```
+
+### Install Dependencies
+
+```shell copy
+cd ./steam-game-idler && npm install
+```
+
+### Build Libraries
+
+```shell copy
+msbuild ./libs/steam-utility/SteamUtility.csproj # Outputs to `/src-tauri/libs/`
+```
+
+### Create Environment Files
+
+1. Create a `.env.dev`, `.env.prod` and `.env.local` file in the root of the project
+2. Add a `KEY` variable containing your [Steam Web API Key](https://steamcommunity.com/dev/apikey) to both `.env.dev` and `.env.prod` files
+3. Add a `MONGO_SRV` variable containing your MongoDB SRV string to both `.env.dev` and `.env.prod` files
+4. Add both `NEXT_PUBLIC_API_BASE` and `NEXT_PUBLIC_API_KEY` variables to `.env.local`
+
+<Callout type="info">
+    In order to use my restricted API you will need an API key. Please [contact me](mailto:zevnda@gmail.com) for assistance.
+</Callout>
+
+```ini filename=".env.dev" copy showLineCount
+KEY="C64E0*********788ED"
+MONGO_SRV="mongodb+srv://<user>:<password>@<database>.mongodb.net/"
+```
+```ini filename=".env.prod" copy showLineCount
+KEY="C64E0*********788ED"
+MONGO_SRV="mongodb+srv://<user>:<password>@<database>.mongodb.net/"
+```
+```ini filename=".env.local" copy showLineCount
+NEXT_PUBLIC_API_BASE="https://apibase.vercel.app/api/"
+NEXT_PUBLIC_API_KEY="3uItp*********$j.nP"
+```
+
+### Build App
+
+```shell copy
+npm run tauri build # Outputs to `/src-tauri/target/release/bundle/`
+```
+
+</Steps>
