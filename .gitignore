@@ -41,8 +41,6 @@ next-env.d.ts
 # tauri signing
 *.ps1
 
-# Idler
-/src-tauri/libs
-/idler-csharp/bin
-/idler-csharp/obj
-/libs/temp
+# sitemap
+_pagefind/
+public/sitemap.xml
