@@ -71,7 +71,7 @@ export default async function RootLayout({ children }) {
                 <Layout
                     navbar={navbar}
                     pageMap={await getPageMap()}
-                    docsRepositoryBase="https://github.com/zevnda/steam-game-idler-docs"
+                    docsRepositoryBase="https://github.com/zevnda/steam-game-idler-docs/tree/main"
                     editLink="Edit on GitHub"
                     footer={footer}
                 >
