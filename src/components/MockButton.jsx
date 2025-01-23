@@ -54,7 +54,7 @@ export default function MockButton({ type }) {
     } else if (type === 'save') {
         return (
             <Fragment>
-                <span className='inline bg-[#1a8fcb] text-white text-[10px] font-semibold px-1.5 py-1.5 rounded-sm shadow-md select-none mx-1'>
+                <span className='inline bg-white text-black text-[10px] font-semibold px-1.5 py-1.5 rounded-sm shadow-md select-none mx-1'>
                     Save
                 </span>
             </Fragment>
