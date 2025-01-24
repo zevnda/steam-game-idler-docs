@@ -19,6 +19,8 @@ export const metadata = {
         'Steam Achyiement Unlocker',
         'Steam Achievements',
     ],
+    authors: [{ name: 'zevnda', url: 'https://github.com/zevnda' }],
+    creator: 'zenvda',
     generator: 'Next.js',
     applicationName: 'Steam Game Idler',
     appleWebApp: {
@@ -29,10 +31,11 @@ export const metadata = {
         template: '%s | Steam Game Idler'
     },
     openGraph: {
-        url: './',
+        url: 'https://steamgameidler.vercel.app',
         siteName: 'Steam Game Idler',
+        images: 'https://steamgameidler.vercel.app/og-image.png',
         locale: 'en_US',
-        type: 'website'
+        type: 'article'
     },
     other: {
         'msapplication-TileColor': '#fff'
@@ -66,9 +69,7 @@ export default async function RootLayout({ children }) {
                         dark: 50
                     }
                 }}
-            >
-                <meta property='og:image' content='/og-image.png' />
-            </Head>
+            />
             <body className={`${GeistSans.className} text-sm`}>
                 <Layout
                     navbar={navbar}
