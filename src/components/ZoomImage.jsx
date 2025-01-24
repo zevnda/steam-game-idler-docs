@@ -1,5 +1,5 @@
 import { Fragment } from 'react';
-import { ImageZoom } from 'nextra/components'
+import { ImageZoom } from 'nextra/components';
 
 export default function ZoomImage({ src, description }) {
     return (
@@ -9,7 +9,7 @@ export default function ZoomImage({ src, description }) {
                     className='mt-5 border border-gray-500 rounded-md'
                     style={{ cursor: 'pointer' }}
                     src={src}
-                    alt="example"
+                    alt='example'
                     width={250}
                     height={250}
                 />

@@ -4,7 +4,7 @@ import { getPageMap } from 'nextra/page-map'
 import { GeistSans } from 'geist/font/sans';
 import Logo from '../src/components/Logo'
 import 'nextra-theme-docs/style.css'
-import './global.css'
+import './globals.css'
 
 export const metadata = {
     description: 'An automatic Steam trading card farmer and achievement unlocker, with a modern UI',
@@ -56,7 +56,7 @@ const footer = <Footer className='text-xs'>© {new Date().getFullYear()} zevnda.
 
 export default async function RootLayout({ children }) {
     return (
-        <html lang="en" dir="ltr" suppressHydrationWarning>
+        <html lang='en' dir='ltr' suppressHydrationWarning>
             <Head
                 color={{
                     hue: 195,
@@ -66,13 +66,15 @@ export default async function RootLayout({ children }) {
                         dark: 50
                     }
                 }}
-            />
+            >
+                <meta property='og:image' content='/og-image.png' />
+            </Head>
             <body className={`${GeistSans.className} text-sm`}>
                 <Layout
                     navbar={navbar}
                     pageMap={await getPageMap()}
-                    docsRepositoryBase="https://github.com/zevnda/steam-game-idler-docs/tree/main"
-                    editLink="Edit on GitHub"
+                    docsRepositoryBase='https://github.com/zevnda/steam-game-idler-docs/tree/main'
+                    editLink='Edit on GitHub'
                     footer={footer}
                 >
                     {children}

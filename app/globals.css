@@ -1,13 +1,21 @@
 @import "tailwindcss";
 
-ul {
-    margin-top: 0;
-}
-
 a {
     text-decoration: none;
 }
 
 a:hover {
     filter: brightness(1.2);
+}
+
+ul {
+    margin-top: 0;
+}
+
+ol {
+    margin-top: 0;
+}
+
+sub {
+    bottom: .5em;
 }

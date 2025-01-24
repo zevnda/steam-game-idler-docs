@@ -1,8 +1,11 @@
 import { Steps } from 'nextra/components'
 import Icon from '../../components/Icon'
+import MockButton from '../../components/MockButton'
+import References from '../../components/References'
 
 # Game Settings
 
+<References>
 Game specific settings can be used to control how certain SGI features handle specific games.
 
 <Steps>
@@ -13,7 +16,7 @@ Hover over a `game card` in the `games list`
 Click <Icon type='dots' /> to show the `game card menu`
 
 {<h3>Step 3</h3>}
-Click `game settings`
+Click <MockButton type='context-cog' content='game settings' />
 </Steps>
 
 ### Max idle time (minutes)
@@ -26,3 +29,4 @@ Click `game settings`
 
 ### Max achievement unlocks
 * **Purpose:** Set the maximum amount of achievements you want [Achievement Unlocker](/features/achievement-unlocker) to unlock for you. SGI will stop unlocking achievements for this game and remove it from the `achievement unlocker list` when the limit is reached
+</References>

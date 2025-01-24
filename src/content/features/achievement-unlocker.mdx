@@ -2,13 +2,19 @@ import Callout from '../../components/Callout'
 import { Steps } from 'nextra/components'
 import Icon from '../../components/Icon'
 import MockButton from '../../components/MockButton'
+import References from '../../components/References'
 
 # Achievement Unlocker
 
+<References>
 The Achievement Unlocker feature will automatically unlock your game's achievements in a way that looks like they were earned naturally.
 
-<Callout type="info">
+<Callout type='info'>
     Configure your settings in [Settings > Achievement Unlocker](/settings/achievement-unlocker) first
+</Callout>
+
+<Callout type='info'>
+    You can add multiple games to the achievement unlocker list
 </Callout>
 
 <Steps>
@@ -19,11 +25,7 @@ Click <Icon type='game' /> in the `sidebar`
 Hover over the `game card` of the game you wish to unlock achievements for and click <Icon type='dots' />
 
 {<h3>Step 3</h3>}
-Click on the `add to achievement unlocker` option to add the game to your `achievement unlocker list`
-
-<Callout type="info">
-    You can add multiple games
-</Callout>
+Click on the <MockButton type='context-add' content='add to achievement unlocker' /> option to add the game to your `achievement unlocker list`
 
 {<h3>Step 4</h3>}
 Click <MockButton type='achievement-unlocker' /> at the top of the `games list` to start the feature
@@ -37,4 +39,5 @@ Once SGI finishes unlocking all available achievements for a game, it will move 
 
 You can run multiple instances of SGI to unlock achievements for multiple games simultaneously if you wish to do so. You will need to pick which games to unlock achievements for in each instance.
 
-You can view the games that are currently in your `achievement unlocker list` by selecting `achievement unlocker` from the `drop-down sort menu` at the top of the `games list`.
+You can view the games that are currently in your `achievement unlocker list` by selecting `achievement unlocker` from the `dropdown sort menu` at the top of the `games list`.
+</References>
