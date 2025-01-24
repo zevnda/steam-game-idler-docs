@@ -1,6 +1,6 @@
-'use client'
+'use client';
 import { Fragment } from 'react';
-import { NotFoundPage } from 'nextra-theme-docs'
+import { NotFoundPage } from 'nextra-theme-docs';
 import { useTheme } from 'next-themes';
 import Link from 'next/link';
 
@@ -14,18 +14,11 @@ export default function NotFound() {
 
     return (
         <Fragment>
-            <NotFoundPage content='Report this issue on GitHub' labels='broken-link'>
-                <p className='text-2xl font-semibold'>
-                    Uh-oh!
-                </p>
-
-                <p>
-                    The page you're looking for doesn't exist
-                </p>
-
+            <NotFoundPage content='Report this issue on GitHub' labels='broken-link' >
+                <p className='text-2xl font-semibold'>Uh-oh!</p>
+                <p>The page you&apos;re looking for doesn&apos;t exist</p>
                 <Link
-                    className='mt-5'
-                    style={{ ...styles, padding: 6, borderRadius: 4, fontWeight: 500, }}
+                    className='mt-5' style={{ ...styles, padding: 6, borderRadius: 4, fontWeight: 500 }}
                     href='#'
                     onClick={() => window.history.back()}
                 >
@@ -33,5 +26,5 @@ export default function NotFound() {
                 </Link>
             </NotFoundPage>
         </Fragment>
-    )
+    );
 }

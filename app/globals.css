@@ -1,11 +1,7 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 a {
     text-decoration: none;
-}
-
-a:hover {
-    filter: brightness(1.2);
 }
 
 ul {
@@ -17,5 +13,5 @@ ol {
 }
 
 sub {
-    bottom: .5em;
+    bottom: 0.5em;
 }

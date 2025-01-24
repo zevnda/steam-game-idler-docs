@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
     'index': 'Introduction',
     'installation': 'Installation',
@@ -9,4 +10,4 @@ export default {
     'settings': 'Settings',
     'references': 'References',
     'gallery': 'Gallery',
-}
+};

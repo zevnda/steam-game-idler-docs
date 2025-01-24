@@ -1,6 +1,7 @@
-import ZoomImage from '../../components/ZoomImage'
-import Icon from '../../components/Icon'
-import References from '../../components/References'
+import { Screenshot } from '../../components/Screenshot';
+import { Image } from 'nextra/components';
+import Icon from '../../components/Icon';
+import References from '../../components/References';
 
 # General
 
@@ -13,31 +14,38 @@ import References from '../../components/References'
 * **Identifying Processes:**
     * Click the dropdown next to the process in Windows Task Manager to identify which process belongs to which game
 
-<ZoomImage src='/assets/YHf5PSv.png' description='Click to expand' />
+<Screenshot>
+    <Image src="/examples/settings-general-1.png" />
+</Screenshot>
 
 ### Anti-away status
-* **Purpose:** Prevents your Steam status from automatically switching to `away` while SGI is running
+
+- **Purpose:** Prevents your Steam status from automatically switching to `away` while SGI is running
 
 ### Free game notifications
-* **Purpose:** Receive native Windows notifications when free Steam games are available to add to your account
+
+- **Purpose:** Receive native Windows notifications when free Steam games are available to add to your account
 
 ### Delete locally stored data on logout
-* **Purpose:** Delete local data such as `steam credentials`, `favorites list`, `card farming list`, and `achievement unlocker list`, when logging out of SGI using the <Icon type='signout' /> button
+
+- **Purpose:** Delete local data such as `steam credentials`, `favorites list`, `card farming list`, and `achievement unlocker list`, when logging out of SGI using the <Icon type='signout' /> button
 
 ### Run at startup
-* **Purpose:** SGI will be added to your startup programs and will run when Windows starts
+
+- **Purpose:** SGI will be added to your startup programs and will run when Windows starts
 
 ### Minimize to tray
-* **Purpose:** Allows users to hide SGI while it continues to work in the background by minimizing it to the system tray
-* **Considerations:** Exit SGI completely by right-clicking the icon in the system tray and clicking exit
+
+- **Purpose:** Allows users to hide SGI while it continues to work in the background by minimizing it to the system tray
+- **Considerations:** Exit SGI completely by right-clicking the icon in the system tray and clicking exit
 
 ### Steam web API key
-* **Purpose:** Allows users to supply their own Steam web API key for fetching user summary and game data
-* **Considerations:**
-   - Useful if users want to keep their Steam profile and game details set to private, but still use SGI as normal
-     - This works only when using an API key that is attached to the account you are logged in to SGI as
-     - Some features still won't work if your profile or game details are private, such as;
-       - Displaying recently played games
-       - Displaying lock/unlock state of achievements
-   - API keys are free for all users with a Steam account, you can [get your API key here](https://steamcommunity.com/dev/apikey)
+
+- **Purpose:** Allows users to supply their own Steam web API key for fetching user summary and game data
+- **Considerations:** - Useful if users want to keep their Steam profile and game details set to private, but still use SGI as normal
+    - This works only when using an API key that is attached to the account you are logged in to SGI as
+    - Some features still won't work if your profile or game details are private, such as;
+        - Displaying recently played games
+        - Displaying lock/unlock state of achievements
+    - API keys are free for all users with a Steam account, you can [get your API key here](https://steamcommunity.com/dev/apikey)
 </References>
