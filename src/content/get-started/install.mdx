@@ -1,28 +1,34 @@
 import { Steps } from 'nextra/components';
-import { IoInformationCircle } from 'react-icons/io5';
-import { Screenshot } from '../components/Screenshot';
 import { Image } from 'nextra/components';
-import References from '../components/References';
 
-# Installation
+import { Screenshot } from '../../components/Screenshot';
+import References from '../../components/References';
+
+import { IoInformationCircle } from 'react-icons/io5';
+
+# Install
+
+## Steps
 
 <References>
     <Steps>
-        {<h3>Download</h3>}
+        ### Download
         Download the `.msi` installer from the [latest release](https://github.com/probablyraging/steam-game-idler/releases/latest/) page on GitHub
 
         <Screenshot>
             <Image src="/examples/install-1.png" />
         </Screenshot>
 
-        {<h3>Install</h3>}
+        ### Install
         Run the `.msi` installer and follow the steps of the installation guide
 
-        {<h3>Run</h3>}
+        ### Run
         After installation, you can launch SGI in one of three ways:
 
-        1. Select "Launch Steam Steam Game Idler" and click "Finish" when prompted
+        1. Select "Launch Steam Game Idler" and click "Finish" when prompted
         2. Run `Steam Game Idler.exe` from the installation directory. Defaults to `C:/Program Files/Steam Game Idler`
         3. Use the created desktop shortcut
     </Steps>
 </References>
+
+## References

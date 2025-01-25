@@ -1,13 +1,36 @@
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
-    'index': 'Introduction',
-    'installation': 'Installation',
-    'how-to-sign-in': 'Sign In',
-    'build-it-yourself': 'Build It Yourself',
-    'steam-credentials': 'Steam Credentials',
-    'faq': 'FAQ',
+    'index': {
+        'title': 'Introduction',
+        'theme': {
+            'breadcrumb': false
+        }
+    },
+    'get-started': 'Get Started',
     'features': 'Features',
     'settings': 'Settings',
-    'references': 'References',
-    'gallery': 'Gallery',
+    'steam-credentials': {
+        'title': 'Steam Credentials',
+        'theme': {
+            'breadcrumb': false
+        }
+    },
+    'faq': {
+        'title': 'FAQ',
+        'theme': {
+            'breadcrumb': false
+        }
+    },
+    'references': {
+        'title': 'References',
+        'theme': {
+            'breadcrumb': false
+        }
+    },
+    'gallery': {
+        'title': 'Gallery',
+        'theme': {
+            'breadcrumb': false,
+        }
+    },
 };

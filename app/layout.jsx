@@ -75,7 +75,7 @@ export default async function RootLayout({ children }) {
                     pageMap={await getPageMap()}
                     docsRepositoryBase='https://github.com/zevnda/steam-game-idler-docs/tree/main'
                     editLink='Edit on GitHub'
-                    sidebar={{ defaultMenuCollapseLevel: 1 }}
+                    sidebar={{ defaultMenuCollapseLevel: 1, toggleButton: false }}
                     footer={footer}
                 >
                     {children}

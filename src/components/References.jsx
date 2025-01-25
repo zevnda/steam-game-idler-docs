@@ -44,33 +44,32 @@ export default function References({ children }) {
         });
 
         if (foundRefs.length > 0) {
-            setReferences(['References', ...foundRefs]);
+            setReferences(foundRefs);
         }
     }, [children]);
+
+    useEffect(() => {
+        const referencesHeader = document.querySelector('h2#references');
+        if (referencesHeader && references.length > 0) {
+            const ul = document.createElement('ul');
+            ul.className = "x:[:is(ol,ul)_&]:my-3 x:not-first:mt-6 x:list-disc x:ms-6";
+            references.forEach((ref, index) => {
+                const li = document.createElement('li');
+                li.className = "x:my-2";
+                const a = document.createElement('a');
+                a.className = "x:focus-visible:nextra-focus x:text-primary-600 x:underline x:hover:no-underline x:decoration-from-font x:[text-underline-position:from-font]";
+                a.href = `/references#${ref.href}`;
+                a.textContent = ref.word;
+                li.appendChild(a);
+                ul.appendChild(li);
+            });
+            referencesHeader.insertAdjacentElement('afterend', ul);
+        }
+    }, [references]);
 
     return (
         <Fragment>
             {children}
-
-            {references.length > 0 && (
-                <Fragment>
-                    <h2 className="x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-semibold x:target:animate-[fade-in_1.5s] x:mt-10 x:border-b x:pb-1 x:text-3xl nextra-border">
-                        {references[0]}
-                    </h2>
-                    <ul className="x:[:is(ol,ul)_&]:my-3 x:not-first:mt-6 x:list-disc x:ms-6">
-                        {references.slice(1).map((ref, index) => (
-                            <li key={index} className="x:my-2">
-                                <a
-                                    className="x:focus-visible:nextra-focus x:text-primary-600 x:underline x:hover:no-underline x:decoration-from-font x:[text-underline-position:from-font]"
-                                    href={`/references#${ref.href}`}
-                                >
-                                    {ref.word}
-                                </a>
-                            </li>
-                        ))}
-                    </ul>
-                </Fragment>
-            )}
         </Fragment>
     );
 }
