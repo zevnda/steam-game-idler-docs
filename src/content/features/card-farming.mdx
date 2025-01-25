@@ -7,10 +7,12 @@ import References from '../../components/References';
 
 # Card Farming
 
-<References>
-    The Card Farming feature simulates playing games to earn trading cards that can be used to craft badges or can be sold on the Steam marketplace for real money. Read the [Steam Trading Card FAQ](https://steamcommunity.com/tradingcards/faq) for more information.
+<References page='/features/card-farming'>
+    The Card Farming feature simulates playing games to earn trading cards that can be used to craft badges or can be sold on the Steam marketplace for real currency. Read the [Steam Trading Card FAQ](https://steamcommunity.com/tradingcards/faq) for more information.
 
-    You have two options to choose from when it comes to how you farm cards, [Card Farming List](/features/card-farming#card-farming-list) and [All Games With Drops](/features/card-farming#all-games-with-drops).
+    You have two options for farming cards: 
+    * **[Card Farming List](/features/card-farming#card-farming-list):** Use a custom list of games you want to farm cards for
+    * **[All Games With Drops](/features/card-farming#all-games-with-drops):** Farm cards for all games in your Steam library that have card drops remaining
 
     <Callout type="info">
         You must add your [Steam Credentials](/steam-credentials) in [Settings > Card Farming](/settings/card-farming) before you can use the Card Farming feature
@@ -38,7 +40,7 @@ import References from '../../components/References';
         Click on the <MockButton type='context-add' content='add to card farming' /> option
 
         {<h3 />}
-        Click <MockButton type='card-farming' /> at the top of the `games list` to start the feature
+        Click <MockButton type='card-farming' /> to start Card Farming
     </Steps>
 
     ### All Games With Drops
@@ -51,10 +53,14 @@ import References from '../../components/References';
         Click <Icon type='game' /> in the `sidebar`
 
         {<h3 />}
-        Click <MockButton type='card-farming' /> at the top of the `games list` to start the feature
+        Click <MockButton type='card-farming' /> to start Card Farming
     </Steps>
 
     ## Additional Information
+
+    There is a three-hour wait before the first card drop for newer accounts, and accounts that have refunded a game recently.
+
+    Some games drop a card every half hour, but some only drop after 60, 90 or 120 minutes.
 
     You can add as many games to your `card farming list` as you like, though SGI can only farm cards for a maximum of 32 games simultaneously as Steam imposes this limit.
 
@@ -62,7 +68,7 @@ import References from '../../components/References';
 
     You can view the games that are currently in your `card farming list` by selecting `card farming` from the `dropdown sort menu` at the top of the `games list`.
 
-    While [Card Farming](/features/card-farming) is active, you may notice `idle windows` starting and stopping occasionally. This is because SGI uses the following method to farm cards as fast as possible.
+    While Card Farming is active, you may notice `idle windows` starting and stopping occasionally. This is because SGI uses the following method to farm cards as fast as possible:
 
     ```
     Start idling each game for 5 minutes
@@ -75,15 +81,6 @@ import References from '../../components/References';
     Stop idling each game
     -- REPEAT --
     ```
-
-    <Callout type="info">
-        There is a three-hour wait before the first card drop for newer accounts,
-        and accounts that have refunded a game recently
-    </Callout>
-
-    <Callout type='info'>
-        Some games drop a card every half hour, but some only drop after 60, 90 or 120 minutes
-    </Callout>
 </References>
 
 ## References

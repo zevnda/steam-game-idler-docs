@@ -1,4 +1,4 @@
-import { Footer, Layout, Navbar } from 'nextra-theme-docs';
+import { Layout, Navbar } from 'nextra-theme-docs';
 import { Head } from 'nextra/components';
 import { getPageMap } from 'nextra/page-map';
 import { GeistSans } from 'geist/font/sans';
@@ -52,21 +52,13 @@ const navbar = (
     <Navbar logo={<Logo />} projectLink='https://github.com/zevnda/steam-game-idler' />
 );
 
-const footer = (
-    <Footer className='text-xs'>© {new Date().getFullYear()} zevnda.</Footer>
-);
-
 export default async function RootLayout({ children }) {
     return (
         <html lang='en' dir='ltr' suppressHydrationWarning>
             <Head
-                color={{
-                    hue: 195,
-                    saturation: 100,
-                    lightness: {
-                        light: 50,
-                        dark: 50,
-                    },
+                backgroundColor={{
+                    light: '#fafafa',
+                    dark: '#101010',
                 }}
             />
             <body className={`${GeistSans.className} text-sm`}>
@@ -76,7 +68,8 @@ export default async function RootLayout({ children }) {
                     docsRepositoryBase='https://github.com/zevnda/steam-game-idler-docs/tree/main'
                     editLink='Edit on GitHub'
                     sidebar={{ defaultMenuCollapseLevel: 1, toggleButton: false }}
-                    footer={footer}
+                    footer={<></>}
+                    feedback={{ content: 'Give us feedback' }}
                 >
                     {children}
                 </Layout>
