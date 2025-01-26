@@ -24,11 +24,11 @@ importers:
         specifier: ^0.4.4
         version: 0.4.4(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       nextra:
-        specifier: ^4.0.5
-        version: 4.0.9(acorn@8.14.0)(next@15.1.6(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.7.3)
+        specifier: ^4.1.0
+        version: 4.1.0(acorn@8.14.0)(next@15.1.6(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.7.3)
       nextra-theme-docs:
-        specifier: ^4.0.5
-        version: 4.0.9(next@15.1.6(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(nextra@4.0.9(acorn@8.14.0)(next@15.1.6(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.7.3))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+        specifier: ^4.1.0
+        version: 4.1.0(next@15.1.6(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(nextra@4.1.0(acorn@8.14.0)(next@15.1.6(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.7.3))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       pagefind:
         specifier: ^1.3.0
         version: 1.3.0
@@ -2346,16 +2346,16 @@ packages:
       sass:
         optional: true
 
-  nextra-theme-docs@4.0.9:
-    resolution: {integrity: sha512-wFgQFZY/uavmqDgTojVSDN3bce3aDpLUcFTCTE/plELp+jbOJryFZSjN+PC5BSqiZA2W4yIbS8vbRfeuoHfIoA==}
+  nextra-theme-docs@4.1.0:
+    resolution: {integrity: sha512-5xEh2S8IJhl1S/aCFY9/pPLtKB+eYG6zkjG1QxvFUVv33w+JDXeo1yHkyZ2V7FKBfwn4dweJDaKsW7GfnkABtA==}
     peerDependencies:
       next: '>=14'
-      nextra: 4.0.9
+      nextra: 4.1.0
       react: '>=18'
       react-dom: '>=18'
 
-  nextra@4.0.9:
-    resolution: {integrity: sha512-Qf9olF140lKl3YBE4xfnOX60mWGqJZvLd/iU99r+XxBUYA+IgJXpWBvRP1KYoygm72+NRmJ89ivAAhbonhdKsw==}
+  nextra@4.1.0:
+    resolution: {integrity: sha512-XT3j6+/Tf/6H3TUCtdpusL2YtbChNk6wr2enmNSzOV/iVa5U8Z6x6/tj2iLJ9CSLPOLZ1z4iK11i1o6am9omJg==}
     engines: {node: '>=18'}
     peerDependencies:
       next: '>=14'
@@ -4548,7 +4548,7 @@ snapshots:
       eslint: 8.57.1
       eslint-import-resolver-node: 0.3.9
       eslint-import-resolver-typescript: 3.7.0(eslint-plugin-import@2.31.0(eslint@8.57.1))(eslint@8.57.1)
-      eslint-plugin-import: 2.31.0(@typescript-eslint/parser@7.2.0(eslint@8.57.1)(typescript@5.7.3))(eslint-import-resolver-typescript@3.7.0)(eslint@8.57.1)
+      eslint-plugin-import: 2.31.0(@typescript-eslint/parser@7.2.0(eslint@8.57.1)(typescript@5.7.3))(eslint-import-resolver-typescript@3.7.0(eslint-plugin-import@2.31.0(eslint@8.57.1))(eslint@8.57.1))(eslint@8.57.1)
       eslint-plugin-jsx-a11y: 6.10.2(eslint@8.57.1)
       eslint-plugin-react: 7.37.4(eslint@8.57.1)
       eslint-plugin-react-hooks: 5.0.0-canary-7118f5dd7-20230705(eslint@8.57.1)
@@ -4579,7 +4579,7 @@ snapshots:
       is-glob: 4.0.3
       stable-hash: 0.0.4
     optionalDependencies:
-      eslint-plugin-import: 2.31.0(@typescript-eslint/parser@7.2.0(eslint@8.57.1)(typescript@5.7.3))(eslint-import-resolver-typescript@3.7.0)(eslint@8.57.1)
+      eslint-plugin-import: 2.31.0(@typescript-eslint/parser@7.2.0(eslint@8.57.1)(typescript@5.7.3))(eslint-import-resolver-typescript@3.7.0(eslint-plugin-import@2.31.0(eslint@8.57.1))(eslint@8.57.1))(eslint@8.57.1)
     transitivePeerDependencies:
       - supports-color
 
@@ -4594,7 +4594,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-import@2.31.0(@typescript-eslint/parser@7.2.0(eslint@8.57.1)(typescript@5.7.3))(eslint-import-resolver-typescript@3.7.0)(eslint@8.57.1):
+  eslint-plugin-import@2.31.0(@typescript-eslint/parser@7.2.0(eslint@8.57.1)(typescript@5.7.3))(eslint-import-resolver-typescript@3.7.0(eslint-plugin-import@2.31.0(eslint@8.57.1))(eslint@8.57.1))(eslint@8.57.1):
     dependencies:
       '@rtsao/scc': 1.1.0
       array-includes: 3.1.8
@@ -6041,13 +6041,13 @@ snapshots:
       - '@babel/core'
       - babel-plugin-macros
 
-  nextra-theme-docs@4.0.9(next@15.1.6(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(nextra@4.0.9(acorn@8.14.0)(next@15.1.6(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.7.3))(react-dom@19.0.0(react@19.0.0))(react@19.0.0):
+  nextra-theme-docs@4.1.0(next@15.1.6(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(nextra@4.1.0(acorn@8.14.0)(next@15.1.6(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.7.3))(react-dom@19.0.0(react@19.0.0))(react@19.0.0):
     dependencies:
       '@headlessui/react': 2.2.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       clsx: 2.1.1
       next: 15.1.6(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       next-themes: 0.4.4(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
-      nextra: 4.0.9(acorn@8.14.0)(next@15.1.6(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.7.3)
+      nextra: 4.1.0(acorn@8.14.0)(next@15.1.6(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.7.3)
       react: 19.0.0
       react-compiler-runtime: 0.0.0-experimental-22c6e49-20241219(react@19.0.0)
       react-dom: 19.0.0(react@19.0.0)
@@ -6060,7 +6060,7 @@ snapshots:
       - immer
       - use-sync-external-store
 
-  nextra@4.0.9(acorn@8.14.0)(next@15.1.6(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.7.3):
+  nextra@4.1.0(acorn@8.14.0)(next@15.1.6(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.7.3):
     dependencies:
       '@formatjs/intl-localematcher': 0.5.10
       '@headlessui/react': 2.2.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
@@ -6099,6 +6099,7 @@ snapshots:
       title: 4.0.1
       unist-util-remove: 4.0.0
       unist-util-visit: 5.0.0
+      unist-util-visit-children: 3.0.0
       yaml: 2.7.0
       zod: 3.24.1
       zod-validation-error: 3.4.0(zod@3.24.1)

@@ -6,7 +6,12 @@ export default {
             'breadcrumb': false
         }
     },
-    'get-started': 'Get Started',
+    'get-started': {
+        'title': 'Get Started',
+        'theme': {
+            'collapsed': false
+        }
+    },
     'features': 'Features',
     'settings': 'Settings',
     'steam-credentials': {
