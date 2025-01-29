@@ -3,47 +3,37 @@ import { Steps } from 'nextra/components';
 import Callout from '../../components/Callout';
 import Icon from '../../components/Icon';
 import MockButton from '../../components/MockButton';
-import References from '../../components/References';
 
 # Achievement Unlocker
 
-<References page='/features/achievement-unlocker'>
-    The Achievement Unlocker feature will automatically unlock your game's achievements in a way that looks like they were earned naturally.
+The Achievement Unlocker feature will automatically unlock your game's achievements in a way that looks like they were earned naturally.
 
-    <Callout type="info">
-        Configure your settings in [Settings > Achievement
-        Unlocker](/settings/achievement-unlocker) first
-    </Callout>
+<Callout type="info">
+    Configure your settings in [Settings > Achievement
+    Unlocker](/settings/achievement-unlocker) first
+</Callout>
 
-    <Callout type="info">
-        You can add multiple games to the achievement unlocker list
-    </Callout>
+<Callout type="info">
+    You can add multiple games to the achievement unlocker list
+</Callout>
 
-    ## Steps
+## Steps
 
-    <Steps>
-        {<h3 />}
-        Click <Icon type='game' /> in the `sidebar`
+<Steps>
+    {<h3 />}
+    Click <Icon type='award' /> in the `sidebar`
 
-        {<h3 />}
-        Hover over the `game card` of the game you wish to unlock achievements for and click <Icon type='dots' />
+    {<h3 />}
+    Click <MockButton type='edit' /> to open the `edit list modal` and click on games to add and remove them
 
-        {<h3 />}
-        Click on the <MockButton type='context-add' content='add to achievement unlocker' /> option to add the game to your `achievement unlocker list`
+    {<h3 />}
+    Click <MockButton type='achievement-unlocker' /> at the top of the `games list` to start the feature
+</Steps>
 
-        {<h3 />}
-        Click <MockButton type='achievement-unlocker' /> at the top of the `games list` to start the feature
-    </Steps>
+## Additional Information
 
-    ## Additional Information
+You can add as many games to your `achievement unlocker list` as you like, but to remain looking legitimate, SGI will only unlock achievements for one game at a time.
 
-    You can add as many games to your `achievement unlocker list` as you like, but to remain looking legitimate, SGI will only unlock achievements for one game at a time.
+You can run multiple instances of SGI to unlock achievements for multiple games simultaneously. You will need to pick which games to unlock achievements for in each instance.
 
-    You can run multiple instances of SGI to unlock achievements for multiple games simultaneously. You will need to pick which games to unlock achievements for in each instance.
-
-    Once SGI finishes unlocking all available achievements for a game, it will move on to the next game, until no games are remaining.
-
-    You can view the games that are currently in your `achievement unlocker list` by selecting `achievement unlocker` from the `dropdown sort menu` at the top of the `games list`.
-</References>
-
-## References
+Once SGI finishes unlocking all available achievements for a game, it will move on to the next game, until no games are remaining.

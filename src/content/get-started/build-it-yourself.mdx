@@ -11,22 +11,22 @@ import { FileTree } from 'nextra/components';
 ## Steps
 
 <Steps>
-### Clone Repo
+### Clone Repo And Submodules
 ```shell copy
-git clone https://github.com/zevnda/steam-game-idler.git
+git clone --recursive https://github.com/zevnda/steam-game-idler.git
 ```
 
 ### Install Dependencies
 
 ```shell copy
 cd ./steam-game-idler
-npm install
+pnpm install
 ```
 
 ### Build Libraries
 
 ```shell copy
-MSBuild ./libs/steam-utility/SteamUtility.csproj # Outputs to `/src-tauri/libs/`
+MSBuild ./libs//SteamUtility.csproj # Outputs to `/src-tauri/libs/`
 ```
 
 ### Create Environment Files
@@ -52,23 +52,23 @@ MSBuild ./libs/steam-utility/SteamUtility.csproj # Outputs to `/src-tauri/libs/`
     </FileTree.Folder>
 </FileTree>
 
-```ini filename=".env.dev" copy showLineCount
+```ini filename=".env.dev" copy
 KEY="C48E0*********7855Q"
 ```
 
-```ini filename=".env.prod" copy showLineCount
+```ini filename=".env.prod" copy
 KEY="C48E0*********7855Q"
 ```
 
 ## Run Dev Build
 
 ```shell copy
-npm run tauri dev
+pnpm run tauri dev
 ```
 
 ### Build App
 
 ```shell copy
-npm run tauri build # Outputs to `/src-tauri/target/release/bundle/`
+pnpm run tauri build # Outputs to `/src-tauri/target/release/bundle/`
 ```
 </Steps>

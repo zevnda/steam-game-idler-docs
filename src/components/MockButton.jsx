@@ -1,4 +1,5 @@
 import { Fragment } from 'react';
+import { MdEdit } from 'react-icons/md';
 import { FaAward } from 'react-icons/fa';
 import { IoSettingsSharp } from 'react-icons/io5';
 import { TbCardsFilled } from 'react-icons/tb';
@@ -37,12 +38,19 @@ export default function MockButton({ type, content }) {
                 </span>
             </Fragment>
         );
+    } else if (type === 'edit') {
+        return (
+            <Fragment>
+                <span className="inline bg-white text-black text-[10px] font-semibold px-1.5 py-1.5 rounded-sm shadow-sm select-none mx-1">
+                    <MdEdit fontSize={14} className="inline" /> Edit List
+                </span>
+            </Fragment>
+        );
     } else if (type === 'card-farming') {
         return (
             <Fragment>
                 <span className="inline bg-white text-black text-[10px] font-semibold px-1.5 py-1.5 rounded-sm shadow-sm select-none mx-1">
-                    <TbCardsFilled fontSize={14} className="inline" /> Card
-                    Farming
+                    <TbCardsFilled fontSize={14} className="inline" /> Start Card Farming
                 </span>
             </Fragment>
         );
@@ -50,8 +58,15 @@ export default function MockButton({ type, content }) {
         return (
             <Fragment>
                 <span className="inline bg-white text-black text-[10px] font-semibold px-1.5 py-1.5 rounded-sm shadow-sm select-none mx-1">
-                    <FaAward fontSize={14} className="inline" /> Achievement
-                    Unlocker
+                    <FaAward fontSize={14} className="inline" /> Start Achievement Unlocker
+                </span>
+            </Fragment>
+        );
+    } else if (type === 'done') {
+        return (
+            <Fragment>
+                <span className="inline bg-white text-black text-[10px] font-semibold px-1.5 py-1.5 rounded-sm shadow-sm select-none mx-1">
+                    Done
                 </span>
             </Fragment>
         );

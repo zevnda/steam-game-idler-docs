@@ -2,14 +2,10 @@ import { Image } from 'nextra/components';
 
 import { Screenshot } from '../../components/Screenshot';
 import Icon from '../../components/Icon';
-import References from '../../components/References';
 
 # General
 
-## Settings
-
-<References page='/settings/general'>
-### Stealth idle windows
+## Hide idle windows <span className='italic'>(not recommended)</span>
 * **Purpose:** Allows users to idle games without visible `idle windows` on the desktop/taskbar
 * **Considerations:**
     * Requires manually ending the `SteamUtility.exe` process for each game in Windows Task Manager
@@ -21,28 +17,23 @@ import References from '../../components/References';
     <Image src="/examples/settings-general-1.png" />
 </Screenshot>
 
-### Anti-away status
+## Prevent away status on Steam
 
 - **Purpose:** Prevents your Steam status from automatically switching to `away` while SGI is running
 
-### Free game notifications
+## Get notified about free games
 
 - **Purpose:** Receive native Windows notifications when free Steam games are available to add to your account
 
-### Delete locally stored data on logout
+## Clear custom list when logging out
 
-- **Purpose:** Delete local data such as `steam credentials`, `favorites list`, `card farming list`, and `achievement unlocker list`, when logging out of SGI using the <Icon type='signout' /> button
+- **Purpose:** Clears all `custom list` data when logging out of SGI using the <Icon type='signout' /> button
 
-### Run at startup
+## Run at startup
 
 - **Purpose:** SGI will be added to your startup programs and will run when Windows starts
 
-### Minimize to tray
-
-- **Purpose:** Allows users to hide SGI while it continues to work in the background by minimizing it to the system tray
-- **Considerations:** Exit SGI completely by right-clicking the icon in the system tray and clicking exit
-
-### Steam web API key
+## Use your own Steam web API key
 
 - **Purpose:** Allows users to supply their own Steam web API key for fetching user summary and game data
 - **Considerations:** - Useful if users want to keep their Steam profile and game details set to private, but still use SGI as normal
@@ -51,6 +42,3 @@ import References from '../../components/References';
         - Displaying recently played games
         - Displaying lock/unlock state of achievements
     - API keys are free for all users with a Steam account, you can [get your API key here](https://steamcommunity.com/dev/apikey)
-</References>
-
-## References

@@ -3,33 +3,28 @@ import { Image } from 'nextra/components';
 
 import { Screenshot } from '../../components/Screenshot';
 import Callout from '../../components/Callout';
-import References from '../../components/References';
 
 import { IoInformationCircle } from 'react-icons/io5';
 
 # Sign In
 
+<Callout type='info'>
+    If you sign in to multiple accounts in the Steam desktop app, all signed in accounts will be available on the account selection screen in SGI
+</Callout>
+
 ## Steps
 
-<References page='/get-started/how-to-sign-in'>
-    <Callout type='info'>
-        If you sign in to multiple accounts in the Steam desktop app, all signed in accounts will be available on the account selection screen in SGI
-    </Callout>
+<Steps>
+    ### Install Steam
+    Download and install the [Steam desktop app](https://store.steampowered.com/about)
 
-    <Steps>
-        ### Install Steam
-        Download and install the [Steam desktop app](https://store.steampowered.com/about)
+    ### Sign In
+    Sign in to your Steam account via the Steam desktop app
 
-        ### Sign In
-        Sign in to your Steam account via the Steam desktop app
+    ### Select Your Account
+    Open SGI and choose your account from the `account selection` screen to proceed to the `dashboard`
 
-        ### Select Your Account
-        Open SGI and choose your account from the `account selection` screen to proceed to the `dashboard`
-
-        <Screenshot>
-            <Image src="/examples/signin-1.png" />
-        </Screenshot>
-    </Steps>
-</References>
-
-## References
+    <Screenshot>
+        <Image src="/examples/signin-1.png" />
+    </Screenshot>
+</Steps>
