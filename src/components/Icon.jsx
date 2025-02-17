@@ -1,89 +1,85 @@
 import { Fragment } from 'react';
-import { IoGameController, IoSettingsSharp, IoPlay } from 'react-icons/io5';
-import { FaAward, FaSignOutAlt, FaHourglassEnd } from 'react-icons/fa';
-import { BiDotsVerticalRounded } from 'react-icons/bi';
-import { TbCardsFilled } from 'react-icons/tb';
-import { MdFavorite } from 'react-icons/md';
-import { FaGift } from 'react-icons/fa6';
+import { TbAward, TbCards, TbDeviceGamepad2, TbDotsVertical, TbGift, TbHeart, TbHourglassLow, TbPlayerPlayFilled, TbSettings } from 'react-icons/tb';
+import { FiLogOut } from 'react-icons/fi';
 
 export default function Icon({ type }) {
     const iconStyles = {
         display: 'inline',
         marginInline: 4,
-        padding: 4,
+        padding: 3,
         borderRadius: 4,
     };
 
     return (
         <Fragment>
             {type === 'game' && (
-                <IoGameController
+                <TbDeviceGamepad2
                     fontSize={24}
                     style={iconStyles}
-                    className="shadow-sm bg-white text-black"
+                    className="shadow-sm bg-[#eff4f7] text-black"
                 />
             )}
             {type === 'cards' && (
-                <TbCardsFilled
+                <TbCards
                     fontSize={24}
                     style={iconStyles}
-                    className="shadow-sm bg-white text-black"
+                    className="shadow-sm bg-[#eff4f7] text-black"
                 />
             )}
             {type === 'award' && (
-                <FaAward
+                <TbAward
                     fontSize={24}
                     style={iconStyles}
-                    className="shadow-sm bg-white text-black"
+                    className="shadow-sm bg-[#eff4f7] text-black"
                 />
             )}
             {type === 'hourglass' && (
-                <FaHourglassEnd
+                <TbHourglassLow
                     fontSize={24}
                     style={iconStyles}
-                    className="shadow-sm bg-white text-black"
+                    className="shadow-sm bg-[#eff4f7] text-black"
                 />
             )}
             {type === 'heart' && (
-                <MdFavorite
+                <TbHeart
                     fontSize={24}
                     style={iconStyles}
-                    className="shadow-sm bg-white text-black"
+                    className="shadow-sm bg-[#eff4f7] text-black"
                 />
             )}
             {type === 'gift' && (
-                <FaGift
+                <TbGift
                     fontSize={24}
                     style={iconStyles}
-                    className="shadow-sm bg-white text-black"
+                    className="shadow-sm bg-[#eff4f7] text-black"
                 />
             )}
             {type === 'play' && (
-                <IoPlay
+                <TbPlayerPlayFilled
                     fontSize={24}
                     style={iconStyles}
-                    className="shadow-sm bg-white text-black"
+                    className="shadow-sm bg-[#eff4f7] text-black"
                 />
             )}
             {type === 'cog' && (
-                <IoSettingsSharp
+                <TbSettings
                     fontSize={24}
                     style={iconStyles}
-                    className="shadow-sm bg-white text-black"
+                    className="shadow-sm bg-[#eff4f7] text-black"
                 />
             )}
             {type === 'dots' && (
-                <BiDotsVerticalRounded
+                <TbDotsVertical
                     fontSize={24}
                     style={iconStyles}
-                    className="shadow-sm bg-white text-black"
+                    className="shadow-sm bg-[#eff4f7] text-black"
                 />
             )}
             {type === 'signout' && (
-                <FaSignOutAlt
+                <FiLogOut
                     fontSize={24}
                     style={iconStyles}
-                    className="shadow-sm bg-white text-black rotate-180"
+                    className="shadow-sm bg-[#eff4f7] text-black rotate-180"
                 />
             )}
         </Fragment>
