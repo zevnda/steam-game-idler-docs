@@ -31,11 +31,5 @@ export default {
         'theme': {
             'breadcrumb': false
         }
-    },
-    'gallery': {
-        'title': 'Gallery',
-        'theme': {
-            'breadcrumb': false,
-        }
-    },
+    }
 };
