@@ -2,7 +2,7 @@
 export default {
     'card-farming': 'Card Farming',
     'achievement-unlocker': 'Achievement Unlocker',
-    'playtime-booster': 'Playtime Booster',
     'achievement-manager': 'Achievement Manager',
+    'playtime-booster': 'Playtime Booster',
     'auto-idler': 'Auto Idler',
 };
