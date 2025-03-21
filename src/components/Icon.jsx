@@ -1,5 +1,5 @@
 import { Fragment } from 'react';
-import { TbAward, TbCards, TbDeviceGamepad2, TbDotsVertical, TbGift, TbHeart, TbHourglassLow, TbPlayerPlayFilled, TbSettings } from 'react-icons/tb';
+import { TbAward, TbCards, TbDeviceGamepad2, TbDotsVertical, TbGift, TbHeart, TbHourglassLow, TbPlayerPlay, TbPlayerPlayFilled, TbSettings } from 'react-icons/tb';
 import { FiLogOut } from 'react-icons/fi';
 
 export default function Icon({ type }) {
@@ -14,6 +14,13 @@ export default function Icon({ type }) {
         <Fragment>
             {type === 'game' && (
                 <TbDeviceGamepad2
+                    fontSize={24}
+                    style={iconStyles}
+                    className="shadow-sm bg-[#eff4f7] text-black"
+                />
+            )}
+            {type === 'play' && (
+                <TbPlayerPlay
                     fontSize={24}
                     style={iconStyles}
                     className="shadow-sm bg-[#eff4f7] text-black"
@@ -54,7 +61,7 @@ export default function Icon({ type }) {
                     className="shadow-sm bg-[#eff4f7] text-black"
                 />
             )}
-            {type === 'play' && (
+            {type === 'playalt' && (
                 <TbPlayerPlayFilled
                     fontSize={24}
                     style={iconStyles}

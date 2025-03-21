@@ -7,7 +7,7 @@ import Icon from '../../components/Icon';
 
 The Playtime Booster feature allows you to idle one or more games manually to boost their total playtime.
 
-When idling games with Playtime Booster, external idle windows will be opened showing the game's banner image. When you see this window it means that SGI is currently idling that game and will continue to idle it until you manually close the window.
+When idling games with Playtime Booster, external `SteamUtility` *(idle)* processes will be opened to interact with the Steam client and imitate game processes. These processes will be closed when the game is no longer being idled.
 
 <Callout type="info">
     You can idle a maximum of 32 games at once. This is a Steam limitation
@@ -20,5 +20,8 @@ When idling games with Playtime Booster, external idle windows will be opened sh
     Click <Icon type='game' /> in the `sidebar`
 
     {<h3 />}
-    Hover over the game you wish to boost playtime for and click <Icon type='play' />
+    Hover over the game you wish to boost playtime for and click <Icon type='playalt' />
+
+    {<h3 />}
+    Click <Icon type='play' /> in the `sidebar` to view the games you are currently idling
 </Steps>
